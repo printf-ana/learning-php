@@ -1,5 +1,4 @@
 <?php
-
 function sacar(array $conta, float $valorASacar): array
 {
     if ($valorASacar > $conta['saldo']) {
@@ -22,5 +21,10 @@ function depositar(array $conta, float $valorADepositar): array
 
 function exibeMensagem(string $mensagem)
 {
-    echo $mensagem . PHP_EOL;
+    echo $mensagem;
+}
+
+function exibeConta (array $conta) {
+    ['titular' => $titular, 'saldo' => $saldo] = $conta;
+    $html = "<li>Titular: $titular. Saldo: $saldo</li>";
 }

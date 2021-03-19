@@ -1,5 +1,4 @@
 <?php
-
 $contasCorrentes = [
     '123.456.789-10' => [
         'titular' => 'Vinicius',
@@ -27,5 +26,5 @@ $contasCorrentes['123.456.789-13'] = [
 // Mostrando com o FOREACH
 
 foreach ($contasCorrentes as $cpf => $conta) {
-    echo $cpf . " " . $conta['titular'] . PHP_EOL;
+    echo $cpf ," ", $conta['titular'];
 }
